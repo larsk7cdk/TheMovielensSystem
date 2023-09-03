@@ -7,6 +7,12 @@ namespace Movielens.Data.DataAccess;
 public class MoviesDataAccess : IMoviesDataAccess
 {
     private readonly List<Movie> _movies = new();
+    private readonly string dbPath;
+
+    public MoviesDataAccess(string dbPath)
+    {
+        this.dbPath = dbPath;
+    }
 
     public async Task<IList<Movie>> FetchAllMovies()
     {
@@ -15,7 +21,7 @@ public class MoviesDataAccess : IMoviesDataAccess
 
         await Task.Run(() =>
         {
-            var movieEntities = JsonConvert.DeserializeObject<List<MovieEntity>>(File.ReadAllText(@"Fakes\movies.json"))!;
+            var movieEntities = JsonConvert.DeserializeObject<List<MovieEntity>>(File.ReadAllText(dbPath))!;
             var movies = movieEntities.Select(s =>
             {
                 var title = s.Title.Substring(0, s.Title.Length - 7);

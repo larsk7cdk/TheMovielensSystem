@@ -18,7 +18,7 @@ builder.Services
 
 // Add Application services
 builder.Services.ConfigureApplication();
-builder.Services.ConfigureData();
+builder.Services.ConfigureDataWebApi();
 
 var app = builder.Build();
 

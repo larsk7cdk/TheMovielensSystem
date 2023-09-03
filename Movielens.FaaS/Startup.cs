@@ -12,6 +12,6 @@ public class Startup : FunctionsStartup
     public override void Configure(IFunctionsHostBuilder builder)
     {
         builder.Services.ConfigureApplication();
-        builder.Services.ConfigureData();
+        builder.Services.ConfigureDataAzureFunc();
     }
 }
