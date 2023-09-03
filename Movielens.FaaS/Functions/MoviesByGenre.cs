@@ -19,7 +19,7 @@ public class MoviesByGenre
     }
 
     [FunctionName("MoviesByGenre")]
-    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
         ILogger log)
     {
         string genre = req.Query["genre"];

@@ -20,7 +20,7 @@ public class MoviesByTitle
     }
 
     [FunctionName("MoviesByTitle")]
-    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
         ILogger log)
     {
         string title = req.Query["title"];
