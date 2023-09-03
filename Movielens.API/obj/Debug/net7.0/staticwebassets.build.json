@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BiaSwWtsLizBRqBXL57vEjPJaHAmQs+3xBmNlt0K4+4=",
+  "Source": "Movielens.API",
+  "BasePath": "_content/Movielens.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

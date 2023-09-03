@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Movielens.API.props" />
+</Project>
