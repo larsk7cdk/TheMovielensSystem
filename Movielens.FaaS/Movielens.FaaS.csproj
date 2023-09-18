@@ -26,5 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Movielens.Application\Movielens.Application.csproj" />
+    <ProjectReference Include="..\Movielens.Contracts\Movielens.Contracts.csproj" />
+    <ProjectReference Include="..\Movielens.Data\Movielens.Data.csproj" />
   </ItemGroup>
 </Project>
