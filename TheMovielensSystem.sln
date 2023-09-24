@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7C72BE05-565C-4D95-8E92-565C456B99B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.Application", "Movielens.Application\Movielens.Application.csproj", "{2E0119D8-06E5-4E98-94B2-1E114DE85812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.Application", "Movielens.Application\Movielens.Application.csproj", "{2E0119D8-06E5-4E98-94B2-1E114DE85812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.Contracts", "Movielens.Contracts\Movielens.Contracts.csproj", "{6D4740ED-96C8-40F9-97B3-86215044C91A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.Contracts", "Movielens.Contracts\Movielens.Contracts.csproj", "{6D4740ED-96C8-40F9-97B3-86215044C91A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.Data", "Movielens.Data\Movielens.Data.csproj", "{27B8F983-CA19-4F44-A867-298D019414FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.Data", "Movielens.Data\Movielens.Data.csproj", "{27B8F983-CA19-4F44-A867-298D019414FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.API", "Movielens.API\Movielens.API.csproj", "{AA4C2DC9-DA9F-40D2-9F03-C5488DCBD3B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.API", "Movielens.API\Movielens.API.csproj", "{AA4C2DC9-DA9F-40D2-9F03-C5488DCBD3B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.FaaS", "Movielens.FaaS\Movielens.FaaS.csproj", "{43FF4DBB-DA5C-4065-B94A-52931FEC2567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.FaaS", "Movielens.FaaS\Movielens.FaaS.csproj", "{43FF4DBB-DA5C-4065-B94A-52931FEC2567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimal.API", "Minimal.API\Minimal.API.csproj", "{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{27B8F983-CA19-4F44-A867-298D019414FB} = {A9AD2817-05AF-41AF-B21B-D78C06F9714A}
 		{AA4C2DC9-DA9F-40D2-9F03-C5488DCBD3B7} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
+		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D6BC24A-8A63-40ED-8A89-481EF0F16CA8}
