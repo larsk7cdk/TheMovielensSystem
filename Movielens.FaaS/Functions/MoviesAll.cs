@@ -18,7 +18,9 @@ public class MoviesAll
     }
 
     [FunctionName("MoviesAll")]
-    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+    public async Task<IActionResult> RunAsync([
+            HttpTrigger(AuthorizationLevel.Anonymous,
+                "get", Route = null)] HttpRequest req,
         ILogger log)
     {
         log.LogInformation("Get all movies");
