@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{93B0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.API.IntegrationTest", "Movielens.API.IntegrationTest\Movielens.API.IntegrationTest.csproj", "{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.FaaS.IntegrationTest", "Movielens.FaaS.IntegrationTest\Movielens.FaaS.IntegrationTest.csproj", "{1C02202F-A635-4784-9344-6FC0626AB660}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C02202F-A635-4784-9344-6FC0626AB660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C02202F-A635-4784-9344-6FC0626AB660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C02202F-A635-4784-9344-6FC0626AB660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C02202F-A635-4784-9344-6FC0626AB660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312} = {93B07EE8-0234-430E-9E1A-00E2C146421C}
+		{1C02202F-A635-4784-9344-6FC0626AB660} = {93B07EE8-0234-430E-9E1A-00E2C146421C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D6BC24A-8A63-40ED-8A89-481EF0F16CA8}

@@ -12,21 +12,19 @@ namespace Movielens.FaaS.Functions;
 public class MoviesByTitle
 {
     private const int TitleMinimumCharacters = 2;
+    private readonly ILogger<MoviesByTitle> _logger;
     private readonly IMoviesService _moviesService;
 
-    public MoviesByTitle(IMoviesService moviesService)
+    public MoviesByTitle(IMoviesService moviesService, ILogger<MoviesByTitle> logger)
     {
         _moviesService = moviesService;
+        _logger = logger;
     }
 
     [FunctionName("MoviesByTitle")]
-    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
-        ILogger log)
+    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "title/{title}")] HttpRequest req, string title)
     {
-        string title = req.Query["title"];
-
-        log.LogInformation("Get movies by title {Title}", title);
-
+        _logger.LogInformation("Get movies by title {Title}", title);
 
         var movies = await _moviesService.GetMoviesByTitle(title);
 

@@ -7,7 +7,7 @@ namespace Movielens.API.IntegrationTest;
 public class MoviesTest
 {
     [Fact]
-    public async Task GetAllMovies()
+    public async Task Get_ShouldGetAllMovies_WhenCalled()
     {
         // Arrange
         await using var api = new MovielensApiFactory();
@@ -21,7 +21,7 @@ public class MoviesTest
     }
 
     [Fact]
-    public async Task GetMovieByTitle()
+    public async Task Get_ShouldGetMovieByTitle_WhenCalledWithTitle()
     {
         // Arrange
         await using var api = new MovielensApiFactory();
@@ -35,7 +35,7 @@ public class MoviesTest
     }
 
     [Fact]
-    public async Task GetMoviesByGenre()
+    public async Task Get_ShouldGetAllMoviesByGenre_WhenCalledWithGenre()
     {
         // Arrange
         await using var api = new MovielensApiFactory();

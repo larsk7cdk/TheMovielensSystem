@@ -11,20 +11,19 @@ namespace Movielens.FaaS.Functions;
 
 public class MoviesByGenre
 {
+    private readonly ILogger<MoviesByGenre> _logger;
     private readonly IMoviesService _moviesService;
 
-    public MoviesByGenre(IMoviesService moviesService)
+    public MoviesByGenre(IMoviesService moviesService, ILogger<MoviesByGenre> logger)
     {
         _moviesService = moviesService;
+        _logger = logger;
     }
 
     [FunctionName("MoviesByGenre")]
-    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
-        ILogger log)
+    public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "genre/{genre}")]HttpRequest request, string genre)
     {
-        string genre = req.Query["genre"];
-
-        log.LogInformation("Get movies by genre {Genre}", genre);
+        _logger.LogInformation("Get movies by genre {Genre}", genre);
 
         var movies = await _moviesService.GetMoviesByGenre(genre);
 
