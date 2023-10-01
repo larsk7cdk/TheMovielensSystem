@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movielens.FaaS", "Movielens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimal.API", "Minimal.API\Minimal.API.csproj", "{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{93B07EE8-0234-430E-9E1A-00E2C146421C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movielens.API.IntegrationTest", "Movielens.API.IntegrationTest\Movielens.API.IntegrationTest.csproj", "{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{AA4C2DC9-DA9F-40D2-9F03-C5488DCBD3B7} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 		{43FF4DBB-DA5C-4065-B94A-52931FEC2567} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
 		{FBDA00C1-4B8B-4B8A-AD44-3262A7B43BE5} = {7C72BE05-565C-4D95-8E92-565C456B99B5}
+		{FDB3E35B-AF2A-42A2-9A07-EE54A9015312} = {93B07EE8-0234-430E-9E1A-00E2C146421C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D6BC24A-8A63-40ED-8A89-481EF0F16CA8}

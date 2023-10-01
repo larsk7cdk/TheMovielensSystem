@@ -25,9 +25,9 @@ public static class MoviesHandlers
             .WithSummary("Get all movies")
             .Produces<IList<Movie>>();
 
-        group.MapGet("/title", async Task<Results<BadRequest<string>, NotFound<string>, Ok<IList<Movie>>>> (
+        group.MapGet("/title/{title}", async Task<Results<BadRequest<string>, NotFound<string>, Ok<IList<Movie>>>> (
                 [FromServices] IMoviesService moviesService,
-                [FromQuery] string title,
+                [FromRoute] string title,
                 CancellationToken token) =>
             {
                 var movies = await moviesService.GetMoviesByTitle(title);
@@ -42,9 +42,9 @@ public static class MoviesHandlers
             })
             .WithSummary("Get all movies by genre")
             .Produces<IList<Movie>>();
-        group.MapGet("/genre", async Task<Results<BadRequest<string>, NotFound<string>, Ok<IList<Movie>>>> (
+        group.MapGet("/genre/{genre}", async Task<Results<BadRequest<string>, NotFound<string>, Ok<IList<Movie>>>> (
                 [FromServices] IMoviesService moviesService,
-                [FromQuery] string genre,
+                [FromRoute] string genre,
                 CancellationToken token) =>
             {
                 var movies = await moviesService.GetMoviesByGenre(genre);
